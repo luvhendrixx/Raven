@@ -67,3 +67,6 @@ raven/
 * **Start Monolithic inside a Single Repository:** Keep all components in one repository (a monorepo layout). It makes cross-language development, protocol updates, and local testing drastically easier while learning.
 * **Define clear network boundaries early:** Since you might use multiple languages, avoid tightly coupling your Go code to a specific language runtime. Communicate across components using clear protocols like WebSockets, gRPC, raw TCP with binary framing, or JSON/Protobuf over streams.
 * **Keep Go package names focused:** In Go, package names should be concise, lowercase, single-word nouns describing their purpose (e.g., `package network`, `package protocol`). Avoid generic folder names like `helpers`, `utils`, or `common`.
+*  When you create many empty folders upfront (like bindings/, services/, web/, protocol/), it creates visual clutter in your editor tree view.
+
+Cause as a single developer, starting with a minimal folder structure allows you to focus only on what exists and works today. You can always run `mkdir -p` to create a directory when you are ready to write code for it.
