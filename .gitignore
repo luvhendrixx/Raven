@@ -1,7 +1,7 @@
 # Ignore Rust build output everywhere
 **/target/
 
-# Temporarily ignore specific language folders 👀
+# Temporarily ignore specific language folders
 Python/.venv
 Python/README.md
 Python/__pycache__
